@@ -1,102 +1,84 @@
-# Gevorg-and-Liana-Wedding-Invite
 <!DOCTYPE html>
 <html lang="hy">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Հրավեր՝ Գևորգ & Լիանա</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Գևորգ և Լիանայի հարսանեկան հրավեր</title>
   <style>
     body {
-      font-family: Georgia, serif;
-      background-color: #f9f9f9;
-      color: #333;
-      margin: 0;
+      font-family: 'Georgia', serif;
+      background-color: #fafafa;
+      color: #222;
+      max-width: 600px;
+      margin: 40px auto;
       padding: 20px;
-    }
-    .container {
-      max-width: 700px;
-      margin: 0 auto;
-      background-color: #ffffff;
-      padding: 30px;
+      border: 1px solid #ddd;
       border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
     h1, h2 {
       text-align: center;
-      color: #6b4c3b;
+      font-weight: normal;
+      margin-bottom: 0.3em;
     }
-    .section {
-      margin-top: 30px;
+    h1 {
+      font-size: 2.5em;
+      color: #444;
     }
-    .rsvp-form {
-      margin-top: 20px;
+    h2 {
+      font-size: 1.6em;
+      margin-top: 1.5em;
+      color: #666;
     }
-    label {
-      display: block;
-      margin: 10px 0 5px;
+    p {
+      font-size: 1.1em;
+      line-height: 1.5em;
+      margin: 0.5em 0;
     }
-    input, select {
-      width: 100%;
-      padding: 8px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
+    a {
+      color: #004aad;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .rsvp {
+      margin-top: 2em;
+      padding: 1em;
+      background-color: #e8e8e8;
+      border-radius: 6px;
+      font-size: 1.1em;
     }
     .note {
-      font-size: 0.95em;
-      color: #666;
-      margin-top: 10px;
+      font-size: 0.9em;
+      font-style: italic;
+      color: #777;
+      margin-top: 1.5em;
+      text-align: center;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Գևորգ & Լիանա</h1>
-    <h2>Հարսանյաց հրավեր</h2>
+  <h1>Գևորգ &amp; Լիանա</h1>
+  <p style="text-align:center; font-style:italic;">Սիրով հրավիրում ենք ձեզ մասնակցելու մեր հարսանեկան միջոցառմանը։</p>
 
-    <div class="section">
-      <p>Սիրով հրավիրում ենք Ձեզ մասնակցելու մեր պսակադրության և հարսանյաց հանդիսությանը։</p>
-      
-      <h3>Պսակադրություն</h3>
-      <p><strong>Ժամը:</strong> 12:30<br>
-      <strong>Վայրը:</strong> Հաղարծինի վանական համալիր, Դիլիջան</p>
-      <p><a href="https://goo.gl/maps/yoe9N6kqVJHB4eaa9" target="_blank">Տեսնել քարտեզը</a></p>
-      
-      <h3>Հանդիսություն</h3>
-      <p><strong>Ժամը:</strong> 17:00<br>
-      <strong>Վայրը:</strong> Միլագրո ռեստորան, Վանաձոր</p>
-    </div>
+  <h2>Պսակադրություն</h2>
+  <p>Օր․ 04 հոկտեմբերի, 2025 թ.<br />
+  Ժամ․ 12:30<br />
+  վայր․ <a href="https://goo.gl/maps/yoe9N6kqVJHB4eaa9" target="_blank" rel="noopener noreferrer">Հաղարծինի վանական համալիր-եկեղեցի, Դիլիջան</a></p>
 
-    <div class="section">
-      <h3>RSVP – Խնդրում ենք հաստատել Ձեր ներկայությունը</h3>
+  <h2>Հանդիսություն</h2>
+  <p>Ժամ․ 17:00<br />
+  վայր․ Միլագրո ռեստորան, Վանաձոր</p>
 
-      <p><strong>Տարբերակ 1 – Կապ հեռախոսով</strong></p>
-      <p>Խնդրում ենք կապ հաստատել մեզ հետ՝ մինչև սեպտեմբերի 20:</p>
-      <ul>
-        <li>📞 Գևորգ՝ <strong>+374 91 00 00 00</strong></li>
-        <li>📞 Լիանա՝ <strong>+374 93 00 00 00</strong></li>
-      </ul>
-
-      <hr>
-
-      <p><strong>Տարբերակ 2 – Օնլայն հաստատում</strong></p>
-      <form class="rsvp-form" action="mailto:youremail@example.com" method="POST" enctype="text/plain">
-        <label for="name">Ձեր անունը</label>
-        <input type="text" id="name" name="Անուն" required>
-
-        <label for="attendance">Մասնակցելու եք՞</label>
-        <select id="attendance" name="Հաստատում">
-          <option value="Այո">Այո</option>
-          <option value="Ոչ">Ոչ</option>
-        </select>
-
-        <br><br>
-        <input type="submit" value="Ուղարկել">
-      </form>
-    </div>
-
-    <div class="section note">
-      <p><strong>Նշում:</strong> Երեխաների ներկայությունը, հնարավորության դեպքում, ցանկալի չէ։ Շնորհակալ ենք ըմբռնման համար։</p>
-    </div>
+  <div class="rsvp">
+    <h2>Խնդրում ենք հաստատել մասնակցությունը</h2>
+    <p>Կապ հաստատեք՝</p>
+    <ul>
+      <li>Հեռախոսով՝ <a href="tel:+37491000000">+374 91 00 00 00 (Գևորգ)</a></li>
+      <li>Էլ․ փոստով՝ <a href="mailto:liana@example.com">liana@example.com</a></li>
+    </ul>
   </div>
+
+  <p class="note">Խնդրում ենք երեխաների մասնակցությունը հնարավորության դեպքում բացառել։</p>
 </body>
 </html>
